@@ -1,1 +1,6 @@
-site_name: My Docs
+site_name: DSA Study Plan
+nav:
+  - Home: index.md
+
+theme:
+    name: readthedocs
