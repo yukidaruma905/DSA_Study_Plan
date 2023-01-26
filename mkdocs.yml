@@ -1,6 +1,13 @@
 site_name: DSA Study Plan
+theme:
+    name: material
+    features:
+      - search.suggest
+      - search.highlight
+      - search.tabs.link
+
+plugins:
+  - search
+
 nav:
   - Home: index.md
-
-theme:
-    name: readthedocs
