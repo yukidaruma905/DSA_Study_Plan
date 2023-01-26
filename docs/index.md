@@ -13,8 +13,8 @@ for a given problem, and how to optimize their performance.
 
 This document is ment for:
 
-> 1. Develop a strong understanding of fundamental data structures and algorithms, such as arrays, linked lists, stacks, queues, trees, and graphs.
-> 2. Learn how to analyze the time and space complexity of algorithms, and understand how to optimize them for better performance.
-> 3. Understand how to implement common algorithms for sorting, searching, and other operations on data structures.
-> 4. Learn how to apply data structures and algorithms to solve real-world problems, such as searching large datasets, optimizing network routing, and solving computational problems in science and engineering.
-> 5. Document my learning process by creating this website to demonstrate my understanding of DSA concepts and my ability to apply them to solve problems.
+1. Develop a strong understanding of fundamental data structures and algorithms, such as arrays, linked lists, stacks, queues, trees, and graphs.
+2. Learn how to analyze the time and space complexity of algorithms, and understand how to optimize them for better performance.
+3. Understand how to implement common algorithms for sorting, searching, and other operations on data structures.
+4. Learn how to apply data structures and algorithms to solve real-world problems, such as searching large datasets, optimizing network routing, and solving computational problems in science and engineering.
+5. Document my learning process by creating this website to demonstrate my understanding of DSA concepts and my ability to apply them to solve problems.
