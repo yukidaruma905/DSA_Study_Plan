@@ -45,3 +45,5 @@ nav:
   - Learn the basics:
     - Things to Know in C++ or any language:
       - C++ Input & Output: cpp_Input_and_Output.md
+      - C++ Data Types: cpp_data_types.md
+      - C++ Conditional Statements: cpp_conditional_statements.md

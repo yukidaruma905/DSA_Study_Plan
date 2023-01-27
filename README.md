@@ -9,8 +9,8 @@ Visit [DSA Study Plan](https://yukidaruma905.github.io/DSA_Study_Plan/)
 <summary>Step 1.1: Things to Know in C++ or any language</summary>
 
 - [x] User Input/Output.
-- [ ] Data Types.
-- [ ] If Else statements.
+- [x] Data Types.
+- [x] If Else statements.
 - [ ] Switch Statement.
 - [ ] What are arrays, strings?
 - [ ] For loops.
