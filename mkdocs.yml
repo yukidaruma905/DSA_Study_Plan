@@ -2,11 +2,18 @@ site_name: DSA Study Plan
 theme:
     name: material
     features:
+    # Search-box settings
       - search.suggest
       - search.highlight
       - search.tabs.link
+    # Navigation settings
+      - navigation.instant
+      - navigation.expand
+      - navigation.path
+    # Code-block copy button
+      - content.code.copy
+
     palette:
-  
       # Palette toggle for light mode
       - media: "(prefers-color-scheme: light)"
         scheme: default
@@ -20,9 +27,21 @@ theme:
         toggle:
           icon: material/brightness-4
           name: Switch to light mode
+    font:
+      code: Roboto Mono
 
 plugins:
   - search
 
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
 nav:
   - Home: index.md
+  - Learn the basics:
+    - Things to Know in C++ or any language:
+      - C++ I/O: cpp_Input_and_Output.md
