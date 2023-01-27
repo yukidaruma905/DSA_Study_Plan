@@ -44,4 +44,4 @@ nav:
   - Home: index.md
   - Learn the basics:
     - Things to Know in C++ or any language:
-      - C++ I/O: cpp_Input_and_Output.md
+      - C++ Input & Output: cpp_Input_and_Output.md
