@@ -11,7 +11,7 @@ Visit [DSA Study Plan](https://yukidaruma905.github.io/DSA_Study_Plan/)
 - [x] User Input/Output.
 - [x] Data Types.
 - [x] If Else statements.
-- [ ] Switch Statement.
+- [x] Switch Statement.
 - [ ] What are arrays, strings?
 - [ ] For loops.
 - [ ] While loops.
