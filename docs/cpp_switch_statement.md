@@ -35,11 +35,10 @@ If the `break` statement is not used, all cases after the correct `case` will be
 
 ### Flowchart of switch...case Statement
 
-
-
 <figure markdown>
-  ![](https://github.com/yukidaruma905/DSA_Study_Plan/blob/17fa42527861a60e6f7027d05491eb30f4a927b0/resources/diagrams/switch_statement_flowchart.png)
-  <figcaption>Switch...case Statement Flowchart</figcaption>
+![image](switch_statement_flowchart_dark.svg#only-dark)
+![image](switch_statement_flowchart_ligh.svg#only-light)
+    <figcaption>Switch...case Statement Flowchart</figcaption>
 </figure>
 
 The `switch` statement is useful when you have a single expression that can have multiple possible values, and you want to perform different actions based on the value of that expression. It's an alternative to multiple `if...else` statements, and it can make your code more readable and efficient.
