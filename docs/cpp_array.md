@@ -68,10 +68,8 @@ int main(){
     myArray[3] = 4;
     myArray[4] = 5;
     
-    // Print the values of the array
-    for (int i = 0; i < 5; i++) {
-        std::cout << "myArray[" << i << "]: " << myArray[i] << std::endl;
-    }
+    // Print the elements of the array
+    std::cout << myArray[0] << " " << myArray[1] << " " << myArray[2] << " " << myArray[3] << " " << myArray[4] << std::endl;
     
     return 0;
 }
@@ -80,11 +78,7 @@ int main(){
 **Output:**
 
 ```
-myArray[0]: 1
-myArray[1]: 2
-myArray[2]: 3
-myArray[3]: 4
-myArray[4]: 5
+1 2 3 4 5
 ```
 
 In this code:
@@ -128,10 +122,8 @@ int main(){
     // Declare and initialize an array
     int myArray[] = {1, 2, 3, 4, 5};
     
-    // Print the values of the array
-    for (int i = 0; i < 5; i++) {
-        std::cout << "myArray[" << i << "]: " << myArray[i] << std::endl;
-    }
+    // Print the elements of the array
+    std::cout << myArray[0] << " " << myArray[1] << " " << myArray[2] << " " << myArray[3] << " " << myArray[4] << std::endl;
     
     return 0;
 }
@@ -140,11 +132,7 @@ int main(){
 **Output:**
 
 ```
-myArray[0]: 1
-myArray[1]: 2
-myArray[2]: 3
-myArray[3]: 4
-myArray[4]: 5
+1 2 3 4 5
 ```
 
 This code is the same as the one before, only in here we used the `{}` notation to initialize an array with a set of values while declaring it.
