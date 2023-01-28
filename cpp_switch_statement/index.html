@@ -5,17 +5,17 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="cpp_Input_and_Output/" rel="next"/>
-<link href="assets/images/favicon.png" rel="icon"/>
+<link href="../cpp_conditional_statements/" rel="prev"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.0.6" name="generator"/>
-<title>DSA Study Plan</title>
-<link href="assets/stylesheets/main.558e4712.min.css" rel="stylesheet"/>
-<link href="assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<title>C++ Switch Statement - DSA Study Plan</title>
+<link href="../assets/stylesheets/main.558e4712.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-<link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -26,14 +26,14 @@
                 body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
                 body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
                 body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-                </style><script src="assets/javascripts/glightbox.min.js"></script></head>
+                </style><script src="../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#dsa-study-plan">
+<a class="md-skip" href="#introduction">
           Skip to content
         </a>
 </div>
@@ -41,7 +41,7 @@
 </div>
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="DSA Study Plan" class="md-header__button md-logo" data-md-component="logo" href="." title="DSA Study Plan">
+<a aria-label="DSA Study Plan" class="md-header__button md-logo" data-md-component="logo" href=".." title="DSA Study Plan">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
@@ -57,7 +57,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Home
+              C++ Switch Statement
             
           </span>
 </div>
@@ -114,21 +114,20 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="DSA Study Plan" class="md-nav__button md-logo" data-md-component="logo" href="." title="DSA Study Plan">
+<a aria-label="DSA Study Plan" class="md-nav__button md-logo" data-md-component="logo" href=".." title="DSA Study Plan">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
 </a>
     DSA Study Plan
   </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<a class="md-nav__link md-nav__link--active" href=".">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
         Home
       </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
-<label aria-expanded="false" class="md-nav__link" for="__nav_2" tabindex="0">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label aria-expanded="true" class="md-nav__link" for="__nav_2" tabindex="0">
           Learn the basics
           <span class="md-nav__icon md-icon"></span>
 </label>
@@ -138,9 +137,9 @@
           Learn the basics
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2_1" id="__nav_2_1" type="checkbox"/>
-<label aria-expanded="false" class="md-nav__link" for="__nav_2_1" tabindex="0">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" id="__nav_2_1" type="checkbox"/>
+<label aria-expanded="true" class="md-nav__link" for="__nav_2_1" tabindex="0">
           Things to Know in C++ or any language
           <span class="md-nav__icon md-icon"></span>
 </label>
@@ -151,24 +150,56 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="cpp_Input_and_Output/">
+<a class="md-nav__link" href="../cpp_Input_and_Output/">
         C++ Input &amp; Output
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="cpp_data_types/">
+<a class="md-nav__link" href="../cpp_data_types/">
         C++ Data Types
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="cpp_conditional_statements/">
+<a class="md-nav__link" href="../cpp_conditional_statements/">
         C++ Conditional Statements
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="cpp_switch_statement/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          C++ Switch Statement
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         C++ Switch Statement
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
+  </a>
+<nav aria-label="Introduction" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cpp-switchcase-statement">
+    cpp switch...case Statement
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#flowchart-of-switchcase-statement">
+    Flowchart of switch...case Statement
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -185,31 +216,75 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
+  </a>
+<nav aria-label="Introduction" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cpp-switchcase-statement">
+    cpp switch...case Statement
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#flowchart-of-switchcase-statement">
+    Flowchart of switch...case Statement
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="dsa-study-plan">DSA Study Plan</h1>
-<p>Data Structures and Algorithms (DSA) is a fundamental concept in
-computer science that involves the study and implementation of various
-ways to organize and manipulate data in a computer program. It covers
-the implementation and analysis of data structures such as arrays,
-linked lists, stacks, queues, trees, and graphs, as well as the design
-and analysis of algorithms for sorting, searching, and other operations
-on these data structures. Understanding DSA is essential for building
-efficient and scalable software systems, as it allows developers to make
- informed decisions about which data structures and algorithms to use
-for a given problem, and how to optimize their performance.</p>
-<p>This document is ment for:</p>
-<ol>
-<li>Develop a strong understanding of fundamental data structures and algorithms, such as arrays, linked lists, stacks, queues, trees, and graphs.</li>
-<li>Learn how to analyze the time and space complexity of algorithms, and understand how to optimize them for better performance.</li>
-<li>Understand how to implement common algorithms for sorting, searching, and other operations on data structures.</li>
-<li>Learn how to apply data structures and algorithms to solve real-world problems, such as searching large datasets, optimizing network routing, and solving computational problems in science and engineering.</li>
-<li>Document my learning process by creating this website to demonstrate my understanding of DSA concepts and my ability to apply them to solve problems.</li>
-</ol>
+<h1>C++ Switch Statement</h1>
+<h2 id="introduction">Introduction</h2>
+<p>In C++, the <code>switch...case</code> statement is used to perform different actions base on the value of a single expression.</p>
+<h3 id="cpp-switchcase-statement">cpp switch...case Statement</h3>
+<p><em>Syntax:</em></p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">expression</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="no">constant1</span><span class="p">:</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">        </span><span class="cm">/* code to be executed if</span>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="cm">        expression is equal to constant1; */</span>
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a>
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="no">constant2</span><span class="p">:</span>
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">        </span><span class="cm">/* code to be executed if</span>
+<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="cm">        expression is equal to constant2 */</span>
+<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a>
+<a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a>
+<a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">    </span><span class="k">default</span><span class="o">:</span>
+<a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">        </span><span class="cm">/* code to be executed if</span>
+<a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="cm">        expression doesn't match any constant */</span>
+<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="p">}</span>
+</code></pre></div>
+<p>The <code>expression</code> is evaluated and compared to the values specified in each <code>case</code> statement. 
+- If a match is found, the corresponding code block is executed.
+- If no match is found, the code in the <code>default</code> block is executed.</p>
+<p>Notice that the <code>break</code> statement is used inside each <code>case</code> block. This terminates the <code>switch</code> statement.</p>
+<p>If the <code>break</code> statement is not used, all cases after the correct <code>case</code> will be executed, which is NOT what we want!</p>
+<h3 id="flowchart-of-switchcase-statement">Flowchart of switch...case Statement</h3>
+<figure>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://github.com/yukidaruma905/DSA_Study_Plan/blob/17fa42527861a60e6f7027d05491eb30f4a927b0/resources/diagrams/switch_statement_flowchart.png"><img alt="" src="https://github.com/yukidaruma905/DSA_Study_Plan/blob/17fa42527861a60e6f7027d05491eb30f4a927b0/resources/diagrams/switch_statement_flowchart.png"/></a>
+</p>
+<figcaption>Switch...case Statement Flowchart</figcaption>
+</figure>
+<p>The <code>switch</code> statement is useful when you have a single expression that can have multiple possible values, and you want to perform different actions based on the value of that expression. It's an alternative to multiple <code>if...else</code> statements, and it can make your code more readable and efficient.</p>
+<blockquote>
+<p><strong>Note:</strong> The expression used in the switch statement can be of type <code>int</code>, <code>char</code>, <code>enum</code> and <code>string</code> (c++17 and later) and the case label can be constant expressions like integer, character and enumeration.</p>
+</blockquote>
+<hr/>
 </article>
 </div>
 </div>
@@ -232,7 +307,7 @@ for a given problem, and how to optimize their performance.</p>
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": ".", "features": ["search.suggest", "search.highlight", "search.tabs.link", "navigation.instant", "navigation.expand", "navigation.path", "content.code.copy"], "search": "assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="assets/javascripts/bundle.51d95adb.min.js"></script>
+<script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "search.tabs.link", "navigation.instant", "navigation.expand", "navigation.path", "content.code.copy"], "search": "../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.51d95adb.min.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
