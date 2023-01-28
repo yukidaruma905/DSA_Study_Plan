@@ -38,7 +38,7 @@ Consider the array `x` we have seen above:
 <figure markdown>
 ![image](array_1_dark.svg#only-dark)
 ![image](array_1_light.svg#only-light)
-    <figcaption>Switch...case Statement Flowchart</figcaption>
+    <figcaption>Array's Index</figcaption>
 </figure>
 
 
@@ -105,7 +105,7 @@ dataType arrayName[arraySize] = {element1, element2, ....};
 <figure markdown>
 ![image](array_2_dark.svg#only-dark)
 ![image](array_2_light.svg#only-light)
-    <figcaption>Switch...case Statement Flowchart</figcaption>
+    <figcaption>Array initialization</figcaption>
 </figure>
 
 Another method to initialize array is during declaration:
@@ -157,7 +157,7 @@ Oftentimes, this random value is simply `0`.
 <figure markdown>
 ![image](array_3_dark.svg#only-dark)
 ![image](array_3_light.svg#only-light)
-    <figcaption>Switch...case Statement Flowchart</figcaption>
+    <figcaption>Array padding empty members</figcaption>
 </figure>
 
 ### cpp Array Out of Bounds
