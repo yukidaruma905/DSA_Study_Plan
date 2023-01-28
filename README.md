@@ -12,7 +12,7 @@ Visit [DSA Study Plan](https://yukidaruma905.github.io/DSA_Study_Plan/)
 - [x] Data Types.
 - [x] If Else statements.
 - [x] Switch Statement.
-- [ ] What are arrays?
+- [x] What are arrays?
 - [ ] For loops.
 - [ ] While loops.
 - [ ] Functions (Pass by Reference and Value).
