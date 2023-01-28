@@ -2,6 +2,7 @@
 
 An array is a collection of elements of the same data type, stored in contiguous memory locations. Arrays are used to store multiple values of the same type in a single variable.
 
+---
 ### cpp Array Declaration
 
 _Syntax:_
@@ -22,6 +23,7 @@ Here,
 - `x` - name of the array.
 - `6` - size of the array.
 
+---
 ### Access Elements in cpp Array
 
 In C++, each element in an array is associated with a number. The number is known as an array index. We can access elements of an array by using those indices.
@@ -91,6 +93,7 @@ In this code:
 - Then, values are assigned to each element of the array using the array index.
 - Finally, a `for` loop is used to print the values of the array.
 
+---
 ### cpp Array Initialization
 
 In C++, it's possible to initialize an array during declaration.
@@ -146,6 +149,7 @@ myArray[4]: 5
 
 This code is the same as the one before, only in here we used the `{}` notation to initialize an array with a set of values while declaring it.
 
+---
 ### cpp Array With Empty Members
 
 In C++, if an array has a size of `n`, we can store up to `n` number of elements in the array. However, what will happen if we store less than `n` number of elements?
@@ -160,6 +164,7 @@ Oftentimes, this random value is simply `0`.
     <figcaption>Array padding empty members</figcaption>
 </figure>
 
+---
 ### cpp Array Out of Bounds
 
 If we declare an array of size `10`, then the array will contain elements from index `0` to `9`.
