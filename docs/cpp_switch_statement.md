@@ -37,7 +37,7 @@ If the `break` statement is not used, all cases after the correct `case` will be
 
 <figure markdown>
 ![image](switch_statement_flowchart_dark.svg#only-dark)
-![image](switch_statement_flowchart_ligh.svg#only-light)
+![image](switch_statement_flowchart_light.svg#only-light)
     <figcaption>Switch...case Statement Flowchart</figcaption>
 </figure>
 
