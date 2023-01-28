@@ -1,2 +1,6 @@
-site
+# VScode related files
 .vscode
+DSA.code-workspace
+
+# Others
+site
