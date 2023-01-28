@@ -285,6 +285,7 @@
 <h1>C++ Arrays</h1>
 <h2 id="introduction">Introduction</h2>
 <p>An array is a collection of elements of the same data type, stored in contiguous memory locations. Arrays are used to store multiple values of the same type in a single variable.</p>
+<hr/>
 <h3 id="cpp-array-declaration">cpp Array Declaration</h3>
 <p><em>Syntax:</em></p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">dataType</span><span class="w"> </span><span class="n">arrayName</span><span class="p">[</span><span class="n">arraySize</span><span class="p">];</span>
@@ -298,6 +299,7 @@
 <li><code>x</code> - name of the array.</li>
 <li><code>6</code> - size of the array.</li>
 </ul>
+<hr/>
 <h3 id="access-elements-in-cpp-array">Access Elements in cpp Array</h3>
 <p>In C++, each element in an array is associated with a number. The number is known as an array index. We can access elements of an array by using those indices.</p>
 <p><em>Syntax:</em></p>
@@ -352,6 +354,7 @@
 <li>Then, values are assigned to each element of the array using the array index.</li>
 <li>Finally, a <code>for</code> loop is used to print the values of the array.</li>
 </ul>
+<hr/>
 <h3 id="cpp-array-initialization">cpp Array Initialization</h3>
 <p>In C++, it's possible to initialize an array during declaration.</p>
 <p><em>Syntax:</em></p>
@@ -390,6 +393,7 @@
 <a href="#__codelineno-8-5" id="__codelineno-8-5" name="__codelineno-8-5"></a>myArray[4]: 5
 </code></pre></div>
 <p>This code is the same as the one before, only in here we used the <code>{}</code> notation to initialize an array with a set of values while declaring it.</p>
+<hr/>
 <h3 id="cpp-array-with-empty-members">cpp Array With Empty Members</h3>
 <p>In C++, if an array has a size of <code>n</code>, we can store up to <code>n</code> number of elements in the array. However, what will happen if we store less than <code>n</code> number of elements?</p>
 <p>In such cases, the compiler assigns random values to the remaining places.</p>
@@ -399,6 +403,7 @@
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../array_3_light.svg#only-light"><img alt="image" src="../array_3_light.svg#only-light"/></a>
 <figcaption>Array padding empty members</figcaption></p>
 </figure>
+<hr/>
 <h3 id="cpp-array-out-of-bounds">cpp Array Out of Bounds</h3>
 <p>If we declare an array of size <code>10</code>, then the array will contain elements from index <code>0</code> to <code>9</code>.</p>
 <p>However, if we try to access the element at index <code>10</code> or more than <code>10</code>, it will result in an "Undefined Behavior".</p>
