@@ -99,6 +99,7 @@ Visit [DSA Study Plan](https://yukidaruma905.github.io/DSA_Study_Plan/)
 </details>
 <details>
 <summary>Step 1.6: Learn Basic Hashing</summary>
+
 - [ ]  Counting frequencies of array elements
 - [ ]  Find the highest/lowest frequency element
 
