@@ -13,7 +13,7 @@ Visit [DSA Study Plan](https://yukidaruma905.github.io/DSA_Study_Plan/)
 - [x] If Else statements.
 - [x] Switch Statement.
 - [x] What are arrays?
-- [ ] For loops.
+- [x] For loops.
 - [ ] While loops.
 - [ ] Functions (Pass by Reference and Value).
 - [ ] What are strings?
