@@ -5,11 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="../cpp_data_types/" rel="prev"/>
-<link href="../cpp_switch_statement/" rel="next"/>
+<link href="../cpp_array/" rel="prev"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.0.6" name="generator"/>
-<title>C++ Conditional Statements - DSA Study Plan</title>
+<title>C++ For Loop - DSA Study Plan</title>
 <link href="../assets/stylesheets/main.558e4712.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -58,7 +57,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              C++ Conditional Statements
+              C++ For Loop
             
           </span>
 </div>
@@ -160,14 +159,29 @@
         C++ Data Types
       </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cpp_conditional_statements/">
+        C++ Conditional Statements
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cpp_switch_statement/">
+        C++ Switch Statement
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cpp_array/">
+        C++ Arrays
+      </a>
+</li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-          C++ Conditional Statements
+          C++ For Loop
           <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
-        C++ Conditional Statements
+        C++ For Loop
       </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
 <label class="md-nav__title" for="__toc">
@@ -182,28 +196,18 @@
 <nav aria-label="Introduction" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cpp-if-statement">
-    cpp if Statement
+<a class="md-nav__link" href="#cpp-for-loop">
+    cpp for Loop
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cpp-ifelse-statement">
-    cpp if...else Statement
+<a class="md-nav__link" href="#ranged-based-for-loop">
+    Ranged Based for Loop
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cpp-ifelse-ifelse-statement">
-    cpp if...else if...else Statement
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#cpp-nested-ifelse">
-    cpp Nested if...else
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ternary-operator">
-    Ternary Operator
+<a class="md-nav__link" href="#cpp-infinite-for-loop">
+    cpp Infinite for Loop
   </a>
 </li>
 </ul>
@@ -211,21 +215,6 @@
 </li>
 </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../cpp_switch_statement/">
-        C++ Switch Statement
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../cpp_array/">
-        C++ Arrays
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../cpp_for_loop/">
-        C++ For Loop
-      </a>
 </li>
 </ul>
 </nav>
@@ -254,28 +243,18 @@
 <nav aria-label="Introduction" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cpp-if-statement">
-    cpp if Statement
+<a class="md-nav__link" href="#cpp-for-loop">
+    cpp for Loop
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cpp-ifelse-statement">
-    cpp if...else Statement
+<a class="md-nav__link" href="#ranged-based-for-loop">
+    Ranged Based for Loop
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cpp-ifelse-ifelse-statement">
-    cpp if...else if...else Statement
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#cpp-nested-ifelse">
-    cpp Nested if...else
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ternary-operator">
-    Ternary Operator
+<a class="md-nav__link" href="#cpp-infinite-for-loop">
+    cpp Infinite for Loop
   </a>
 </li>
 </ul>
@@ -288,120 +267,92 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>C++ Conditional Statements</h1>
+<h1>C++ For Loop</h1>
+<p><u>Quick links to navigate:</u>
+- [[#Introduction]]
+    - [[#cpp for Loop]]
+    - [[#Ranged Based for Loop]]
+    - [[#cpp Infinite for Loop]]</p>
 <h2 id="introduction">Introduction</h2>
-<p>Conditional statements in C++ allow you to control the flow of a program based on certain conditions. The basic for of a conditional statement is an <code>if</code> statement. We use the <code>if</code> statement to run a block of code only when a certain condition is met.</p>
-<p>There are three forms of <code>if...else</code> statements in C++.</p>
-<ol>
-<li><code>if</code> Statement.</li>
-<li><code>if...else</code> Statement.</li>
-<li><code>if...else if...else</code> Statement.</li>
-</ol>
-<h3 id="cpp-if-statement">cpp if Statement</h3>
+<p>In C++, loops are a control flow statements that allows you to execute a block of code repeatedly for a given number of iterations.</p>
+<hr/>
+<h3 id="cpp-for-loop">cpp for Loop</h3>
 <p><em>Syntax:</em></p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">condition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="c1">// body of if statement</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">initialization</span><span class="p">;</span><span class="w"> </span><span class="n">condition</span><span class="p">;</span><span class="w"> </span><span class="n">increment</span><span class="o">/</span><span class="n">decrement</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="c1">// code to be executed</span>
 <a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="p">}</span>
 </code></pre></div>
-<p>The <code>condition</code> is a Boolean expression that is evaluated to either true or false.</p>
 <ul>
-<li>If the <code>condition</code> evaluates to <code>true</code>, the code inside the body of <code>if</code> is executed.</li>
-<li>If the <code>condition</code> evaluates to <code>false</code>, the code inside the body of <code>if</code> is skipped.</li>
+<li>The <code>initialization</code> statement is executed only once, before the loop starts. It is used to initialize the loop control variable.</li>
+<li>The <code>condition</code> is a boolean expression that is evaluated before each iteration of the loop.<ul>
+<li>If the condition is true, the loop continues to execute.</li>
+<li>If the condition is false, the loop exits.</li>
 </ul>
-<hr/>
-<h3 id="cpp-ifelse-statement">cpp if...else Statement</h3>
-<p><em>Syntax:</em></p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">condition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span><span class="c1">// block of code if condition is true</span>
+</li>
+<li>The <code>increment/decrement</code> statement is executed after each iteration of the loop. It is used to update the loop control variable.</li>
+</ul>
+<figure>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../for_loop_statement_dark.svg#only-dark"><img alt="image" src="../for_loop_statement_dark.svg#only-dark"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../for_loop_statement_light.svg#only-light"><img alt="image" src="../for_loop_statement_light.svg#only-light"/></a>
+<figcaption>For Loop Statement Flowchart</figcaption></p>
+</figure>
+<p>Example 1.6.1:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" "</span><span class="p">;</span>
 <a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="p">}</span>
-<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="c1">// block of code if condition is false</span>
-<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="p">}</span>
-</code></pre></div>
-<p>The <code>if...else</code> allows you to specify code that should be executed if the condition is false.</p>
-<p>If the <code>condition</code> evaluates to <code>true</code>:</p>
-<ul>
-<li>the code inside the body of <code>if</code> is executed.</li>
-<li>the code inside the body of <code>else</code> is skipped from execution.</li>
-</ul>
-<p>If the <code>condition</code> evaluates to <code>false</code>:</p>
-<ul>
-<li>the code inside the body of <code>if</code> is skipped from execution.</li>
-<li>the code inside the body of <code>else</code> is executed.</li>
-</ul>
-<hr/>
-<h3 id="cpp-ifelse-ifelse-statement">cpp if...else if...else Statement</h3>
-<p><em>Syntax:</em></p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">condition1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="c1">// code block 1</span>
-<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="p">}</span>
-<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">condition2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">    </span><span class="c1">// code block 2</span>
-<a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="p">}</span>
-<a href="#__codelineno-2-7" id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">    </span><span class="c1">// code block 3</span>
-<a href="#__codelineno-2-9" id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="p">}</span>
-</code></pre></div>
-<p>Here,</p>
-<ul>
-<li>If <code>condition1</code> evaluates to <code>true</code>, the <code>code block 1</code> is executed.</li>
-<li>If <code>condition1</code> evaluates to <code>false</code>, then <code>condition2</code> is evaluated.</li>
-<li>If <code>condition2</code> evaluates to <code>true</code>, the <code>code block 2</code> is executed.</li>
-<li>If <code>condition2</code> evaluates to <code>false</code>, the <code>code block 3</code> is executed.</li>
-</ul>
-<hr/>
-<h3 id="cpp-nested-ifelse">cpp Nested if...else</h3>
-<p><em>Syntax:</em></p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1">// outer if statement</span>
-<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">condition1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">    </span><span class="c1">// statements</span>
-<a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a>
-<a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">    </span><span class="c1">// inner if statement</span>
-<a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">condition2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-3-7" id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">        </span><span class="c1">// statements</span>
-<a href="#__codelineno-3-8" id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="w">    </span><span class="p">}</span>
-<a href="#__codelineno-3-9" id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="p">}</span>
-</code></pre></div>
-<p>Here,</p>
-<ul>
-<li>If <code>condition1</code> evaluates to <code>true</code>, the statements inside the outer if will be executed and the <code>condition2</code> will be evaluated.</li>
-<li>If <code>condition2</code> evaluates to <code>true</code>, the statements inside the inner if will be executed (Both outer and inner statements were executed).</li>
-<li>If <code>condition2</code> evaluates to <code>false</code>, then the block will be skipped (Only outer statement were executed).</li>
-<li>If <code>condition1</code> evaluates to <code>false</code>, then the block will be skipped (No statement will be executed).</li>
-</ul>
-<hr/>
-<h3 id="ternary-operator">Ternary Operator</h3>
-<p>C++ also provide a ternary operator <code>? :</code> which is a shorthand for <code>if...else</code> statement and it is used to make the code more readable.</p>
-<p><em>Syntax:</em></p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="n">variable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">condition</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">value1</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">value2</span><span class="p">;</span>
-</code></pre></div>
-<p>The above line of code can be read as "if <code>condition</code> is <code>true</code> then assign <code>value1</code> to variable else assign <code>value2</code> to variable."</p>
-<p>Example 1.3.1:</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
-<a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a>
-<a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
-<a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
-<a href="#__codelineno-5-5" id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
-<a href="#__codelineno-5-6" id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">c</span><span class="p">;</span>
-<a href="#__codelineno-5-7" id="__codelineno-5-7" name="__codelineno-5-7"></a>
-<a href="#__codelineno-5-8" id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="w">    </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
-<a href="#__codelineno-5-9" id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"c: "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-<a href="#__codelineno-5-10" id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a href="#__codelineno-5-11" id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="p">}</span>
 </code></pre></div>
 <p><strong>Output:</strong></p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>c: 10
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>1 2 3 4 5 6 7 8 9 10
 </code></pre></div>
 <p>In this code:</p>
 <ul>
-<li>The program will compare the value of <code>a</code> and <code>b</code>.</li>
-<li>If the value of <code>a</code> is greater than <code>b</code>, then <code>c</code> will be assigned the value of <code>a</code>.</li>
-<li>Otherwise <code>c</code> will be assigned the value of <code>b</code>.</li>
+<li>The loop starts with the initialization statement <code>int i = 1</code>, which initializes the loop control variable <code>i</code> to <code>1</code>.</li>
+<li>The condition <code>i &lt;= 10</code> is checked before each iteration of the loop. As long as <code>i</code> is less than equal to <code>10</code>, the loop continues to execute.</li>
+<li>The increment statement <code>i++</code> is executed after each iteration of the loop, which increments the value of <code>i</code> by <code>1</code>.</li>
 </ul>
-<blockquote>
-<p><strong>Note:</strong> Ternary operator should be used with caution, as it can make the code harder to read and understand if overused or used in complex expressions.</p>
-</blockquote>
-<p>Conditional statements are fundamental building block of many programs and they allow you to create more complex logic and decision making in your code.</p>
+<hr/>
+<h3 id="ranged-based-for-loop">Ranged Based for Loop</h3>
+<p>The <code>ranged-based for loop</code> is  a new feature in C++11 that allows you to iterate over elements in an array or container with a simple and readable syntax. It uses a range-based expression to define the elements that the loop will operate on.</p>
+<p><em>Syntax:</em></p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">element</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">collection</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">    </span><span class="c1">// statements</span>
+<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><code>element</code> is a variable that will hold each element in the collection.</li>
+<li><code>collection</code> is the array or container to iterated.</li>
+</ul>
+<p>Example 1.6.2:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>
+<a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">arr</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">};</span>
+<a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">arr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" "</span><span class="p">;</span>
+<a href="#__codelineno-4-7" id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">    </span><span class="p">}</span>
+<a href="#__codelineno-4-8" id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<a href="#__codelineno-4-9" id="__codelineno-4-9" name="__codelineno-4-9"></a>
+<a href="#__codelineno-4-10" id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a href="#__codelineno-4-11" id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Output:</strong></p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>1 2 3 4 5
+</code></pre></div>
+<p>In this code:</p>
+<ul>
+<li>The ranged-base <code>for</code> loop is used to iterate over the elements in the <code>arr</code> array.</li>
+<li>The variable <code>i</code> is declared inside the loop to hold each element.</li>
+<li>The body of the loop prints out each element in the array.</li>
+</ul>
+<hr/>
+<h3 id="cpp-infinite-for-loop">cpp Infinite for Loop</h3>
+<p>If the <code>condition</code> in a <code>for</code> loop is always <code>true</code>, it runs forever (<em>until memory is full</em>).</p>
+<p><em>Syntax:</em></p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="c1">// infinite for loop</span>
+<a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">    </span><span class="c1">// block of code</span>
+<a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="p">}</span>
+</code></pre></div>
 <hr/>
 </article>
 </div>
