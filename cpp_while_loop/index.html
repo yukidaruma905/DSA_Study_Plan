@@ -5,11 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="../cpp_Input_and_Output/" rel="prev"/>
-<link href="../cpp_conditional_statements/" rel="next"/>
+<link href="../cpp_for_loop/" rel="prev"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.0.6" name="generator"/>
-<title>C++ Data Types - DSA Study Plan</title>
+<title>C++ while Loop - DSA Study Plan</title>
 <link href="../assets/stylesheets/main.558e4712.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -58,7 +57,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              C++ Data Types
+              C++ while Loop
             
           </span>
 </div>
@@ -155,61 +154,10 @@
         C++ Input &amp; Output
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          C++ Data Types
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cpp_data_types/">
         C++ Data Types
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#introduction">
-    Introduction
-  </a>
-<nav aria-label="Introduction" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#cpp-fundamental-data-types">
-    cpp Fundamental Data Types
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#cpp-type-modifiers">
-    cpp Type Modifiers
-  </a>
-<nav aria-label="cpp Type Modifiers" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#cpp-modifiers-data-types-list">
-    cpp Modifiers Data Types List
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#auto-specifier">
-    Auto specifier
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#derived-data-types">
-    Derived Data Types
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../cpp_conditional_statements/">
@@ -231,10 +179,42 @@
         C++ For Loop
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../cpp_while_loop/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          C++ while Loop
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         C++ while Loop
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
+  </a>
+<nav aria-label="Introduction" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cpp-while-loop">
+    cpp while Loop
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cpp-dowhile-loop">
+    cpp do...while Loop
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -263,32 +243,13 @@
 <nav aria-label="Introduction" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cpp-fundamental-data-types">
-    cpp Fundamental Data Types
+<a class="md-nav__link" href="#cpp-while-loop">
+    cpp while Loop
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cpp-type-modifiers">
-    cpp Type Modifiers
-  </a>
-<nav aria-label="cpp Type Modifiers" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#cpp-modifiers-data-types-list">
-    cpp Modifiers Data Types List
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#auto-specifier">
-    Auto specifier
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#derived-data-types">
-    Derived Data Types
+<a class="md-nav__link" href="#cpp-dowhile-loop">
+    cpp do...while Loop
   </a>
 </li>
 </ul>
@@ -301,163 +262,94 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>C++ Data Types</h1>
+<h1>C++ while Loop</h1>
 <h2 id="introduction">Introduction</h2>
-<p>In C++, data types are used to define the type of a variable, which determines the size and layout of the variable's memory, as well as the set of operations that can be performed on it.</p>
-<hr/>
-<h3 id="cpp-fundamental-data-types">cpp Fundamental Data Types</h3>
-<p>The table below shows the fundamental data types, their meaning, and their sizes (<em>in bytes</em>):</p>
-<table>
-<thead>
-<tr>
-<th align="left">Data Types</th>
-<th align="left">Meaning</th>
-<th align="center">Size (<em>in Bytes</em>)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>int</code></td>
-<td align="left">Integer</td>
-<td align="center">2 or 4</td>
-</tr>
-<tr>
-<td align="left"><code>float</code></td>
-<td align="left">Floating-point</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left"><code>double</code></td>
-<td align="left">Double Floating-point</td>
-<td align="center">8</td>
-</tr>
-<tr>
-<td align="left"><code>char</code></td>
-<td align="left">Character</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="left"><code>wchar_t</code></td>
-<td align="left">Wide Character</td>
-<td align="center">2</td>
-</tr>
-<tr>
-<td align="left"><code>bool</code></td>
-<td align="left">Boolean</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="left"><code>void</code></td>
-<td align="left">Empty</td>
-<td align="center">0</td>
-</tr>
-</tbody>
-</table>
-<hr/>
-<h3 id="cpp-type-modifiers">cpp Type Modifiers</h3>
-<p>We can further modify some of the fundamental data types by using types modifiers.</p>
-<p>There are 4 types modifiers in C++. These are:</p>
-<ol>
-<li><code>signed</code></li>
-<li><code>unsigned</code></li>
-<li><code>short</code></li>
-<li><code>long</code></li>
-</ol>
-<p>We can modify the following types with the above modifiers:</p>
+<p>The <code>while</code> loop in C++ repeatedly executes a block of code as long as the specified condition is <code>true</code>.</p>
+<h3 id="cpp-while-loop">cpp while Loop</h3>
+<p><em>Syntax:</em></p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">condition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="c1">// statement</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="p">}</span>
+</code></pre></div>
+<p>Here:</p>
 <ul>
-<li><code>int</code></li>
-<li><code>double</code></li>
-<li><code>char</code></li>
+<li>A <code>while</code> loop evaluates the <code>condition</code>.</li>
+<li>If the <code>condition</code> is <code>true</code>, the code inside the <code>while</code> loop is executed.</li>
+<li>The <code>condition</code> is evaluated again.</li>
+<li>This process continues until the <code>condition</code> is <code>false</code>.</li>
+<li>When the <code>condition</code> evaluates to <code>false</code>, the loop terminates.</li>
 </ul>
-<h4 id="cpp-modifiers-data-types-list">cpp Modifiers Data Types List</h4>
-<table>
-<thead>
-<tr>
-<th align="left">Data Type</th>
-<th align="center">Size (<em>in Bytes</em>)</th>
-<th align="left">Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>signed int</code></td>
-<td align="center">4</td>
-<td align="left">used for integers (equivalent to int)</td>
-</tr>
-<tr>
-<td align="left"><code>unsigned int</code></td>
-<td align="center">4</td>
-<td align="left">can only store positive integers</td>
-</tr>
-<tr>
-<td align="left"><code>short</code></td>
-<td align="center">2</td>
-<td align="left">used for small integers (range -32768 to 32767)</td>
-</tr>
-<tr>
-<td align="left"><code>unsigned short</code></td>
-<td align="center">2</td>
-<td align="left">used for small integers (range 0 to 65,535)</td>
-</tr>
-<tr>
-<td align="left"><code>long</code></td>
-<td align="center">at least 4</td>
-<td align="left">used for large integers (equivalent to long int)</td>
-</tr>
-<tr>
-<td align="left"><code>unsigned long</code></td>
-<td align="center">4</td>
-<td align="left">used for large positive integers or 0 (equivalent to unsigned long int)</td>
-</tr>
-<tr>
-<td align="left"><code>long long</code></td>
-<td align="center">8</td>
-<td align="left">used for very large integers (equivalent to long long int)</td>
-</tr>
-<tr>
-<td align="left"><code>unsigned long long</code></td>
-<td align="center">8</td>
-<td align="left">used for very large integers or 0 (equivalent to unsigned long long int)</td>
-</tr>
-<tr>
-<td align="left"><code>long double</code></td>
-<td align="center">12</td>
-<td align="left">used for large floating-point numbers</td>
-</tr>
-<tr>
-<td align="left"><code>singed char</code></td>
-<td align="center">1</td>
-<td align="left">used for character (guaranteed range -127 to 127)</td>
-</tr>
-<tr>
-<td align="left"><code>unsigned char</code></td>
-<td align="center">1</td>
-<td align="left">used for characters (range 0 to 255)</td>
-</tr>
-</tbody>
-</table>
-<p>Let's see a few examples:</p>
-<p>Example 1.2.1:</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kt">long</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4523232</span><span class="p">;</span>
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kt">long</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2345342</span><span class="p">;</span>
-<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kt">long</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">233434.56343</span><span class="p">;</span>
-<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kt">short</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3434233</span><span class="p">;</span><span class="w"> </span><span class="c1">// Error! out of range</span>
-<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-5</span><span class="p">;</span><span class="w">    </span><span class="c1">// Error! can only store positive numbers or 0</span>
+<figure>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../while_loop_statement_dark.svg#only-dark"><img alt="image" src="../while_loop_statement_dark.svg#only-dark"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../while_loop_statement_light.svg#only-light"><img alt="image" src="../while_loop_statement_light.svg#only-light"/></a>
+<figcaption>while Loop Statement Flowchart</figcaption></p>
+</figure>
+<p>Example 1.7.1:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">count</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" "</span><span class="p">;</span>
+<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">        </span><span class="n">count</span><span class="o">++</span><span class="p">;</span>
+<a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">    </span><span class="p">}</span>
+<a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">   </span>
+<a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="p">}</span>
 </code></pre></div>
-<hr/>
-<h4 id="auto-specifier">Auto specifier</h4>
-<p>The <code>auto</code> specifier is a way of detecting the data type base on assignment value.</p>
-<p>Example 1.2.2:</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">auto</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w">   </span><span class="c1">// causes i to be of type int</span>
-<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">              </span><span class="c1">// and</span>
-<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="k">auto</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5.0</span><span class="p">;</span><span class="w"> </span><span class="c1">// causes j to be of type double.</span>
+<p><strong>Output:</strong></p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>1 2 3 4 5
 </code></pre></div>
-<h3 id="derived-data-types">Derived Data Types</h3>
+<p>In this code:</p>
 <ul>
-<li>arrays.</li>
-<li>pointers.</li>
-<li>function types.</li>
-<li>structures.</li>
+<li>The <code>while</code> loop continues to execute as long as <code>count</code> is less than or equal to <code>5</code>.</li>
+<li>The variable <code>count</code> is incremented inside the loop so that eventually the condition becomes false and the loop terminates.</li>
+</ul>
+<hr/>
+<h3 id="cpp-dowhile-loop">cpp do...while Loop</h3>
+<p>The <code>do...while</code> loop in C++ is similar to the <code>while</code> loop, but with one important difference: the block of code in a <code>do...while</code> loop is guaranteed to execute at least once.</p>
+<p><em>Syntax:</em></p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">    </span><span class="c1">//statement</span>
+<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">condition</span><span class="p">);</span>
+</code></pre></div>
+<p>Here:</p>
+<ul>
+<li>The body of the loop is executed at first. Then the <code>condition</code> is evaluated.</li>
+<li>If the <code>condition</code> evaluates to <code>true</code>, the body of the loop inside the <code>do</code> statement is executed again.</li>
+<li>The <code>condition</code> is evaluated once again.</li>
+<li>If the <code>condition</code> evaluates to <code>true</code>, the body of the loop inside the <code>do</code> statement is executed again.</li>
+<li>This process continues until the <code>condition</code> evaluates to <code>false</code>. Then the loop stops.</li>
+</ul>
+<figure>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../do_while_loop_statement_dark.svg#only-dark"><img alt="image" src="../do_while_loop_statement_dark.svg#only-dark"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../do_while_loop_statement_light.svg#only-light"><img alt="image" src="../do_while_loop_statement_light.svg#only-light"/></a>
+<figcaption>do...while Loop Statement Flowchart</figcaption></p>
+</figure>
+<p>Example 1.7.2:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>
+<a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">    </span><span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" "</span><span class="p">;</span>
+<a href="#__codelineno-4-7" id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">        </span><span class="n">count</span><span class="o">++</span><span class="p">;</span>
+<a href="#__codelineno-4-8" id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">count</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span>
+<a href="#__codelineno-4-9" id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<a href="#__codelineno-4-10" id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a href="#__codelineno-4-11" id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Output:</strong></p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>1 2 3 4 5
+</code></pre></div>
+<p>In this code:</p>
+<ul>
+<li>The <code>do...while</code> loop will first execute the block of code inside the loop.</li>
+<li>Then it evaluates the condition.<ul>
+<li>If the condition is true, the loop will repeat.</li>
+<li>If the condition is false, the loop will terminate.</li>
+</ul>
+</li>
 </ul>
 <hr/>
 </article>
