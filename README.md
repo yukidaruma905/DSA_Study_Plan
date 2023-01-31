@@ -14,7 +14,7 @@ Visit [DSA Study Plan](https://yukidaruma905.github.io/DSA_Study_Plan/)
 - [x] Switch Statement.
 - [x] What are arrays?
 - [x] For loops.
-- [ ] While loops.
+- [x] While loops.
 - [ ] Functions (Pass by Reference and Value).
 - [ ] What are strings?
 - [ ] Time Complexity (Learn Basics, and then analyze in next Step.
