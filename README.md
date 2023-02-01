@@ -17,7 +17,7 @@ Visit [DSA Study Plan](https://yukidaruma905.github.io/DSA_Study_Plan/)
 - [x] While loops.
 - [x] Functions (Pass by Reference and Value).
 - [ ] What are strings?
-- [ ] Time Complexity (Learn Basics, and then analyze in next Step.
+- [x] Time Complexity (Learn Basics, and then analyze in next Step.
 
 </details>
 <details>
