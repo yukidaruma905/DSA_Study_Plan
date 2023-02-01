@@ -55,3 +55,4 @@ nav:
       - C++ For Loop: cpp_for_loop.md
       - C++ while Loop: cpp_while_loop.md
       - C++ Functions: cpp_functions.md
+      - Time Complexity: time_complexity.md
