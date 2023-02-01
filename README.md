@@ -105,3 +105,22 @@ Visit [DSA Study Plan](https://yukidaruma905.github.io/DSA_Study_Plan/)
 - [ ]  Find the highest/lowest frequency element
 
 </details>
+
+## Step 2: Learn Important Sorting Techinques
+<details>
+<summary>Step 2.1: Sorting-I</summary>
+
+- [ ] Selection Sort
+- [ ] Bubble Sort
+- [ ] Insertion Sort
+
+</details>
+<details>
+<summary>Step 2.2: Sorting-II</summary>
+
+- [ ] Merge Sort
+- [ ] Recursive Bubble Sort
+- [ ] Recursive Insertion Sort
+- [ ] Quick Sort
+
+</details>
