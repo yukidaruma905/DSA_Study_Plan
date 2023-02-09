@@ -30,7 +30,7 @@ In this code:
 
 - Like the previous program, this one also prints a right-triangle pattern, but instead of asterisks (`*`), it prints numbers.
 - The first line of code sets the value of an integer variable `n` to `5` (where `n` is the right-triangle height or the number of rows).
-- In the `main` function, there are two nested `for` loops. The outer loop `i` runs from `0` to `n-1` (`0` to `4`), this will handle the height of the pattern, and the inner loop `j` runs from `0` to `i` (`0` to `i`) for each iteration of the outer loop.
+- In the `main` function, there are two nested `for` loops. The outer loop `i` runs from (`0` to `n-1`), this will handle the height of the pattern, and the inner loop `j` runs from (`0` to `i`) for each iteration of the outer loop.
 - Inside the inner loop, the statement `std::cout << j+1;` prints the value of `j+1` to the console (the number of column).
 	- when the algorithm is running in the second row `i=2`, we need to print the number of the first and second columns to the console `1 2`.
 	- when the algorithm is running in the third row `i=3`, we need to print the number of the first `3` columns to the console `1 2 3`.

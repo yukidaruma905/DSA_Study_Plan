@@ -47,13 +47,13 @@ int main(){
 In this code:
 
 - We need to print two mirrored pyramid patterns of height `n`.
-- The first half of the code (the firs loop) creates the upper half of the pyramid pattern:
+- The first half of the code (the first loop) creates the upper half of the pyramid pattern:
 	- The outer loop `i` runs from (`1` to `n`), this will handle the height of the pattern.
 	- The first inner loop `j`  runs from (`1` to `n-i` ) creates the necessary white-spaces before each row of asterisks to maintain the pyramid shape.
 		- The number of white-spaces decreases by `1` after each iteration of the outer loop.
 	- The second inner loop `j` runs from (`0` to `2*i-1`) creates the actual row of asterisks.
 		- The number of asterisks in each row increases by `2` after each iteration of the outer loop.
-- The second half of the code (the second loop) creates the bottom half of the pyramid pattern, which is simply a mirror image of the upper half.
+- The second half of the code (the second loop) creates the bottom half of the pyramid pattern, which is simply a mirror image of the upper half:
 	- The outer loop `i` runs from (`n` to `1`), this will handle the height of the pattern.
 	- The first inner loop `j`  runs from (`1` to `n-i` ) creates the necessary white-spaces before each row of asterisks to maintain the pyramid shape.
 		- The number of white-spaces decreases by `1` after each iteration of the outer loop.

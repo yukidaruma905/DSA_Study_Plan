@@ -32,7 +32,7 @@ int main(){
 In this code:
 
 - The first line of code sets the value of an integer variable `n` to `5` (where `n` is the pyramid height or the number of rows).
-- In the `main` function, there are two nested `for` loops. The outer loop `i` runs from `n` to `1` , this will handle the height of the pattern, and the inner loop `j` runs from `1` to `n-i` for each iteration of the outer loop.
+- In the `main` function, there are two nested `for` loops. The outer loop `i` runs from (`n` to `1`), this will handle the height of the pattern, and the inner loop `j` runs from (`1` to `n-i`) for each iteration of the outer loop.
 	- This loop is used to print the white-space characters `" "` to indent the asterisks to the right.
 	- The number of white-spaces printed in each row is calculated using the expression `n-i`.
 	- For example, when the algorithm is running in the third row `i=3` the number of white-spaces is `n-i=2`.

@@ -32,7 +32,7 @@ int main(){
 In this code:
 
 - The first line of code sets the value of an integer variable `n` to `5` (where `n` is the pyramid height or the number of rows).
-- In the `main` function, there are two nested `for` loops. The outer loop `i` runs from `1` to `n` (`1` to `n`), this will handle the height of the pattern, and the inner loop `j` runs from `1` to `n-1` for each iteration of the outer loop.
+- In the `main` function, there are two nested `for` loops. The outer loop `i` runs from (`1` to `n`), this will handle the height of the pattern, and the inner loop `j` runs from (`1` to `n-1`) for each iteration of the outer loop.
 - Inside the inner loop, the statement `std::cout << " ";` prints a space character to the console. The number of spaces printed depends on the value of `n` and the current iteration of the outer loop.
 	- when the algorithm is running in the first row `i=1` the number of white-spaces `" "` is `n-i=4`, this sets the center of the pyramid 4 places to the right in order to give the pyramid its shape on the console.
 	- when the algorithm is running in the second row `i=2` the number of white-spaces `" "` is `n-i=3`, and so on.
