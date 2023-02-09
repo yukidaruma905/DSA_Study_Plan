@@ -273,6 +273,11 @@
         Pattern 9
       </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dsa_p10/">
+        Pattern 10
+      </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -334,7 +339,7 @@
 <p>In this code:</p>
 <ul>
 <li>The first line of code sets the value of an integer variable <code>n</code> to <code>5</code> (where <code>n</code> is the pyramid height or the number of rows).</li>
-<li>In the <code>main</code> function, there are two nested <code>for</code> loops. The outer loop <code>i</code> runs from <code>1</code> to <code>n</code> (<code>1</code> to <code>n</code>), this will handle the height of the pattern, and the inner loop <code>j</code> runs from <code>1</code> to <code>n-1</code> for each iteration of the outer loop.</li>
+<li>In the <code>main</code> function, there are two nested <code>for</code> loops. The outer loop <code>i</code> runs from (<code>1</code> to <code>n</code>), this will handle the height of the pattern, and the inner loop <code>j</code> runs from (<code>1</code> to <code>n-1</code>) for each iteration of the outer loop.</li>
 <li>Inside the inner loop, the statement <code>std::cout &lt;&lt; " ";</code> prints a space character to the console. The number of spaces printed depends on the value of <code>n</code> and the current iteration of the outer loop.<ul>
 <li>when the algorithm is running in the first row <code>i=1</code> the number of white-spaces <code>" "</code> is <code>n-i=4</code>, this sets the center of the pyramid 4 places to the right in order to give the pyramid its shape on the console.</li>
 <li>when the algorithm is running in the second row <code>i=2</code> the number of white-spaces <code>" "</code> is <code>n-i=3</code>, and so on.</li>
