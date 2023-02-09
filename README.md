@@ -25,9 +25,9 @@ Visit [DSA Study Plan](https://yukidaruma905.github.io/DSA_Study_Plan/)
 
 |Check                   |No.   |Pattern            |
 |:----------------------:|:----:|:-----------------:|
-|<ul><li>- [ ] </li></u1>|  1   |![](Images/P1.png) |
-|<ul><li>- [ ] </li></u1>|  2   |![](Images/P2.png) |
-|<ul><li>- [ ] </li></u1>|  3   |![](Images/P3.png) |
+|<ul><li>- [x] </li></u1>|  1   |![](Images/P1.png) |
+|<ul><li>- [x] </li></u1>|  2   |![](Images/P2.png) |
+|<ul><li>- [x] </li></u1>|  3   |![](Images/P3.png) |
 |<ul><li>- [ ] </li></u1>|  4   |![](Images/P4.png) |
 |<ul><li>- [ ] </li></u1>|  5   |![](Images/P5.png) |
 |<ul><li>- [ ] </li></u1>|  6   |![](Images/P6.png) |

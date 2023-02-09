@@ -56,3 +56,7 @@ nav:
       - C++ while Loop: cpp_while_loop.md
       - C++ Functions: cpp_functions.md
       - Time Complexity: time_complexity.md
+    - Build-up Logical Thinking:
+      - Pattern 1: dsa_p1.md
+      - Pattern 2: dsa_p2.md
+      - Pattern 3: dsa_p3.md
