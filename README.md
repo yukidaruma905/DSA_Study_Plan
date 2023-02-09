@@ -28,12 +28,12 @@ Visit [DSA Study Plan](https://yukidaruma905.github.io/DSA_Study_Plan/)
 |<ul><li>- [x] </li></u1>|  1   |![](Images/P1.png) |
 |<ul><li>- [x] </li></u1>|  2   |![](Images/P2.png) |
 |<ul><li>- [x] </li></u1>|  3   |![](Images/P3.png) |
-|<ul><li>- [ ] </li></u1>|  4   |![](Images/P4.png) |
-|<ul><li>- [ ] </li></u1>|  5   |![](Images/P5.png) |
-|<ul><li>- [ ] </li></u1>|  6   |![](Images/P6.png) |
-|<ul><li>- [ ] </li></u1>|  7   |![](Images/P7.png) |
-|<ul><li>- [ ] </li></u1>|  8   |![](Images/P8.png) |
-|<ul><li>- [ ] </li></u1>|  9   |![](Images/P9.png) |
+|<ul><li>- [x] </li></u1>|  4   |![](Images/P4.png) |
+|<ul><li>- [x] </li></u1>|  5   |![](Images/P5.png) |
+|<ul><li>- [x] </li></u1>|  6   |![](Images/P6.png) |
+|<ul><li>- [x] </li></u1>|  7   |![](Images/P7.png) |
+|<ul><li>- [x] </li></u1>|  8   |![](Images/P8.png) |
+|<ul><li>- [x] </li></u1>|  9   |![](Images/P9.png) |
 |<ul><li>- [ ] </li></u1>|  10  |![](Images/P10.png)|
 |<ul><li>- [ ] </li></u1>|  11  |![](Images/P11.png)|
 |<ul><li>- [ ] </li></u1>|  12  |![](Images/P12.png)|
