@@ -10,6 +10,7 @@ theme:
       - navigation.instant
       - navigation.expand
       - navigation.path
+      - navigation.footer
     # Code-block copy button
       - content.code.copy
 
@@ -29,6 +30,11 @@ theme:
           name: Switch to light mode
     font:
       code: Roboto Mono
+
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/yukidaruma905/DSA_Study_Plan
 
 plugins:
   - search
