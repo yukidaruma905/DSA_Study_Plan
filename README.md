@@ -38,10 +38,10 @@ Visit [DSA Study Plan](https://yukidaruma905.github.io/DSA_Study_Plan/)
 |<ul><li>- [x] </li></u1>|  11  |![](Images/P11.png)|
 |<ul><li>- [x] </li></u1>|  12  |![](Images/P12.png)|
 |<ul><li>- [x] </li></u1>|  13  |![](Images/P13.png)|
-|<ul><li>- [ ] </li></u1>|  14  |![](Images/P14.png)|
-|<ul><li>- [ ] </li></u1>|  15  |![](Images/P15.png)|
-|<ul><li>- [ ] </li></u1>|  16  |![](Images/P16.png)|
-|<ul><li>- [ ] </li></u1>|  17  |![](Images/P17.png)|
+|<ul><li>- [x] </li></u1>|  14  |![](Images/P14.png)|
+|<ul><li>- [x] </li></u1>|  15  |![](Images/P15.png)|
+|<ul><li>- [x] </li></u1>|  16  |![](Images/P16.png)|
+|<ul><li>- [x] </li></u1>|  17  |![](Images/P17.png)|
 |<ul><li>- [ ] </li></u1>|  18  |![](Images/P18.png)|
 |<ul><li>- [ ] </li></u1>|  19  |![](Images/P19.png)|
 |<ul><li>- [ ] </li></u1>|  20  |![](Images/P20.png)|
