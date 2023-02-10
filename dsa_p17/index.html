@@ -5,11 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="../dsa_p4/" rel="prev"/>
-<link href="../dsa_p6/" rel="next"/>
+<link href="../dsa_p16/" rel="prev"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.0.6" name="generator"/>
-<title>Pattern 5 - DSA Study Plan</title>
+<title>Pattern 17 - DSA Study Plan</title>
 <link href="../assets/stylesheets/main.558e4712.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -58,7 +57,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Pattern 5
+              Pattern 17
             
           </span>
 </div>
@@ -230,28 +229,10 @@
         Pattern 4
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          Pattern 5
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dsa_p5/">
         Pattern 5
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#solution">
-    Solution
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../dsa_p6/">
@@ -308,10 +289,28 @@
         Pattern 16
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../dsa_p17/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Pattern 17
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         Pattern 17
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#solution">
+    Solution
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -345,40 +344,59 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>Pattern 5</h1>
+<h1>Pattern 17</h1>
 <h2 id="solution">Solution</h2>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>
-<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">;</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">m</span><span class="o">=</span><span class="mi">7</span><span class="p">;</span>
 <a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>
 <a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
-<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">&gt;=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">--</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">i</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"*"</span><span class="p">;</span>
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="p">(</span><span class="n">m</span><span class="mi">-2</span><span class="o">*</span><span class="n">i</span><span class="mi">-1</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" "</span><span class="p">;</span>
 <a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">        </span><span class="p">}</span>
-<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">    </span><span class="p">}</span>
-<a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="p">}</span>
+<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a>
+<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="p">(</span><span class="kt">char</span><span class="p">)(</span><span class="sc">'A'</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">j</span><span class="p">);</span>
+<a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">        </span><span class="p">}</span>
+<a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a>
+<a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="n">i</span><span class="p">;</span><span class="n">j</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">--</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="p">(</span><span class="kt">char</span><span class="p">)(</span><span class="sc">'A'</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">j</span><span class="mi">-1</span><span class="p">);</span>
+<a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">        </span><span class="p">}</span>
+<a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">    </span><span class="p">}</span>
+<a href="#__codelineno-0-20" id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a href="#__codelineno-0-21" id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="p">}</span>
 </code></pre></div>
 <p><strong>Output:</strong></p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>*****
-<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>****
-<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a>***
-<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>**
-<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a>*
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>   A
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>  ABA
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a> ABCBA
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>ABCDCBA
 </code></pre></div>
 <p>In this code:</p>
 <ul>
-<li>We need to print a right-triangle pattern of asterisks (<code>*</code>), but with the rows starting from the highest value of <code>n</code> (number of rows) and decrementing down to <code>1</code>.</li>
-<li>The first line of code sets the value of an integer variable <code>n</code> to <code>5</code> (where <code>n</code> is the right-triangle height or the number of rows).</li>
-<li>In the <code>main</code> function, there are two nested <code>for</code> loops. The outer loop <code>i</code> runs from (<code>n</code> to <code>1</code>), this will handle the height of the pattern, and the inner loop <code>j</code> runs from (<code>1</code> to <code>i</code>) for each iteration of the outer loop.<ul>
-<li>we start counting backwards, the first line value is <code>5</code>. so, we need to print the asterisks sign five times.</li>
-<li>the second line value is <code>4</code>. so, we print the asterisks sign four times, and so on.</li>
+<li>First, we define two variables <code>n</code> and <code>m</code>, with the values <code>4</code> and <code>7</code> respectively.<ul>
+<li><code>n</code> is used to control the number of rows in the pyramid shape.</li>
+<li><code>m</code> is used to determine the width of each row.</li>
 </ul>
 </li>
-<li>After the inner loop finishes executing, the statement <code>std::cout &lt;&lt; std::endl;</code> prints a newline character, which causes the program to print a new line for the next iteration of the outer loop.</li>
-<li>This process repeats until both loops have finished executing, and a right-triangle pattern of asterisks is printed to the console with the rows starting from the highest value of <code>n</code> (5) and decrementing down to <code>1</code>.</li>
+<li>In the <code>main</code> function, we have a <code>for</code> loop <code>i</code> runs from (<code>0</code> to <code>n-1</code>), this will handle the height of the pattern.<ul>
+<li>Inside, we have the first inner loop <code>j</code> runs from (<code>0</code> to <code>(m-2*i-1)/2</code>) that will print spaces <code>" "</code> before the letters in each row.<ul>
+<li>The number of spaces printed will be determined by the expression <code>(m-2*i-1)/2</code>, which calculates the number of spaces required for each row.</li>
+</ul>
+</li>
+<li>After printing the spaces, another for loop <code>j</code> runs from (<code>0</code> to <code>i+1</code>) is used to print the letters, where <code>j</code> is the current letter.<ul>
+<li>The letters will start from <code>'A'</code> and increase by one for each subsequent letter in the same row.</li>
+</ul>
+</li>
+<li>Finally, another for loop <code>j</code> runs from (<code>i</code> to <code>1</code>) is used to print the decreasing letters, which form the right half of the pyramid shape.<ul>
+<li>The letters will start from the last letter in the previous loop and decrease by one for each subsequent letter in the same row.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The loop continues to run until all <code>n</code> iterations are completed.</li>
 </ul>
 <hr/>
 </article>
@@ -387,7 +405,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Pattern 4" class="md-footer__link md-footer__link--prev" href="../dsa_p4/" rel="prev">
+<a aria-label="Previous: Pattern 16" class="md-footer__link md-footer__link--prev" href="../dsa_p16/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -396,21 +414,8 @@
 <span class="md-footer__direction">
                   Previous
                 </span>
-                Pattern 4
+                Pattern 16
               </div>
-</div>
-</a>
-<a aria-label="Next: Pattern 6" class="md-footer__link md-footer__link--next" href="../dsa_p6/" rel="next">
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                  Next
-                </span>
-                Pattern 6
-              </div>
-</div>
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
 </div>
 </a>
 </nav>
