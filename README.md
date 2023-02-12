@@ -42,11 +42,11 @@ Visit [DSA Study Plan](https://yukidaruma905.github.io/DSA_Study_Plan/)
 |<ul><li>- [x] </li></u1>|  15  |![](Images/P15.png)|
 |<ul><li>- [x] </li></u1>|  16  |![](Images/P16.png)|
 |<ul><li>- [x] </li></u1>|  17  |![](Images/P17.png)|
-|<ul><li>- [ ] </li></u1>|  18  |![](Images/P18.png)|
-|<ul><li>- [ ] </li></u1>|  19  |![](Images/P19.png)|
-|<ul><li>- [ ] </li></u1>|  20  |![](Images/P20.png)|
-|<ul><li>- [ ] </li></u1>|  21  |![](Images/P21.png)|
-|<ul><li>- [ ] </li></u1>|  22  |![](Images/P22.png)|
+|<ul><li>- [x] </li></u1>|  18  |![](Images/P18.png)|
+|<ul><li>- [x] </li></u1>|  19  |![](Images/P19.png)|
+|<ul><li>- [x] </li></u1>|  20  |![](Images/P20.png)|
+|<ul><li>- [x] </li></u1>|  21  |![](Images/P21.png)|
+|<ul><li>- [x] </li></u1>|  22  |![](Images/P22.png)|
 
 </details>
 <details>
